@@ -13,7 +13,7 @@ const bot = new TelegramBot(token, { polling: true });
 // Testing Bot
 bot.on('message', (msg)=> {
     const chatId = msg.chat.id;
-    bot.sendMessage(chatId, 'Hello Worldd');
+    bot.sendMessage(chatId, 'Hello World');
 })
 
 // Store active users
