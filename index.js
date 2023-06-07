@@ -10,6 +10,12 @@ const Admin_User_ID = process.env.ADMIN_USER_ID
 // Create a new instance of the TelegramBot
 const bot = new TelegramBot(token, { polling: true });
 
+// Testing Bot
+bot.on('message', (msg)=> {
+    const chatId = msg.chat.id;
+    bot.sendMessage(chatId, 'Hello Worldd');
+})
+
 // Store active users
 let activeUsers = {};
 
